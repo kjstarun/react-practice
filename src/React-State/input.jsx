@@ -47,16 +47,61 @@ import { Component } from "react";
 //   }
 // }
 
+// const Input = () => {
+//   const [city, setCity] = useState("");
+//   return (
+//     <>
+//       <input
+//         type="text"
+//         value={city}
+//         onChange={(e) => setCity(e.target.value)}
+//       />
+//       <h1>City:{city}</h1>
+//     </>
+//   );
+// };
+
 const Input = () => {
-  const [city, setCity] = useState("");
+  const [details, setDetails] = useState({
+    name: "Tarun",
+    age: 21,
+    dept: "ECE",
+  });
+
+  const changeInput = (e) => {
+    const { name, value } = e.target;
+    setDetails((prevState) => {
+      return {
+        ...prevState,
+        [name]: value,
+      };
+    });
+  };
+  console.log("render");
   return (
     <>
       <input
         type="text"
-        value={city}
-        onChange={(e) => setCity(e.target.value)}
+        name="name"
+        value={details.name}
+        onChange={changeInput}
       />
-      <h1>City:{city}</h1>
+      <input
+        type="text"
+        name="age"
+        value={details.age}
+        onChange={changeInput}
+      />
+      <input
+        type="text"
+        name="dept"
+        value={details.dept}
+        onChange={changeInput}
+      />
+
+      <h1>Name: {details.name}</h1>
+      <h1>Age: {details.age}</h1>
+      <h1>Dept: {details.dept}</h1>
     </>
   );
 };

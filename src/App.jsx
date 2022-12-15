@@ -1,4 +1,4 @@
-// import Input from "./React-State/input";
+import Input from "./React-State/input";
 // import Textarea from "./React-Form/textarea";
 // import Range from "./React-Form/range";
 // import Dropdown from "./React-Form/dropdown";
@@ -11,14 +11,7 @@ import Closure from "./Batching/closure";
 function App() {
   return (
     <>
-      {/* <Input />
-      <Textarea />
-      <Range />
-      <Dropdown />
-      <Date />
-      <Check />
-      <Radio /> */}
-      <Closure />
+      <Input />
     </>
   );
 }
