@@ -5,13 +5,14 @@ import Input from "./React-State/input";
 // import Date from "./React-Form/date";
 // import Check from "./React-Form/checkbox";
 // import Radio from "./React-Form/radio";
+import Counter from "./Conditional-Rendering/counter";
 
-import Closure from "./Batching/closure";
+// import Closure from "./Batching/closure";
 
 function App() {
   return (
     <>
-      <Input />
+      <Counter />
     </>
   );
 }
