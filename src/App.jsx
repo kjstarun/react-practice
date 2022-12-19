@@ -5,15 +5,22 @@ import Input from "./React-State/input";
 // import Date from "./React-Form/date";
 // import Check from "./React-Form/checkbox";
 // import Radio from "./React-Form/radio";
-import Counter from "./Conditional-Rendering/counter";
-
+// import Counter from "./Conditional-Rendering/counter";
+// import Like from "./Like-functionality/like";
 // import Closure from "./Batching/closure";
+// import PropsCC from "./Props/propsCC";
+// import PropsFC from "./Props/propsFC";
+import Parent from "./PassDatatoChild/parent";
 
 function App() {
   return (
-    <>
-      <Counter />
-    </>
+    // <>
+    //   <PropsFC subject="HTML" />
+    //   <PropsCC subject="CSS" />
+    //   <PropsFC subject="JS" />
+    //   <PropsCC subject="React" />
+    // </>
+    <Parent />
   );
 }
 
