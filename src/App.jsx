@@ -10,7 +10,8 @@ import Input from "./React-State/input";
 // import Closure from "./Batching/closure";
 // import PropsCC from "./Props/propsCC";
 // import PropsFC from "./Props/propsFC";
-import Parent from "./PassDatatoChild/parent";
+// import Parent from "./PassDatatoChild/parent";
+import Like from "./Like-functionality/like";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
     //   <PropsFC subject="JS" />
     //   <PropsCC subject="React" />
     // </>
-    <Parent />
+    <Like/>
   );
 }
 

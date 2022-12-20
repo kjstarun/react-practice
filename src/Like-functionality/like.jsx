@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 const Like = () => {
+  console.log("entry");
   const [user, setUser] = useState([
     {
       id: 1,
@@ -243,59 +244,27 @@ const Like = () => {
       },
     },
   ]);
-
-  const like = (id) => {
-    // console.log(id,"butterfly")
-    return setUser((prev) => {
-      return prev.map((item) => {
-        if (id === item.id) {
-          if (item.isActive) {
-            item.isActive = false;
-          } else {
-            item.isActive = true;
-          }
-          console.log(item.isActive, id);
-        }
-        return item;
-      });
-    });
+  const cardContainer = {
+    display: "flex",
+    flexWrap: "wrap",
+    // flex:"5",
+    flexDirection: "row",
+    gap: "10px",
   };
-  console.log(user);
-
-  const likeStyle = {
+  const card = {
+    // border: "1px solid sil",
     color: "blue",
+    backgroundColor: "#e9e9e9",
+    padding: "10px",
+    height: "200px",
+    width: "200px",
   };
-  const unlikeStyle = {
-    color: "white",
-  };
-
-  const thumbsup = {
-    fontSize: "32px",
-  };
-
   return (
-    <>
-      <h2>Twitter Cards</h2>
-      <div>
-        {user.map((item) => {
-          return (
-            <>
-              <div>
-                <div>{item.name}</div>
-                <button
-                  style={item.isActive ? likeStyle : unlikeStyle}
-                  onClick={() => {
-                    like(item.id);
-                  }}
-                >
-                  <i className="fa fa-thumbs-up" style={thumbsup}></i>
-                </button>
-              </div>
-            </>
-          );
-        })}
-      </div>
-    </>
+    <div style={cardContainer}>
+      {user.map((item) => {
+        return <p style={card}>{item.name}</p>;
+      })}
+    </div>
   );
 };
 
