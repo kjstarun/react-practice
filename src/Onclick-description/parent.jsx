@@ -1,3 +1,14 @@
+/*
+- Create a component for list.
+- Create a useState for List
+- Creat a useState for current id
+- Call the API.
+- Store it in json format
+- Render the titles from the API on the left side.
+- Create a component for details
+- Onclicking the title in the List, Grab the id and display the details corresponding to the id in the right side.
+ */
+
 import { useState } from "react";
 import Description from "./desc";
 import List from "./list";
@@ -222,7 +233,11 @@ const Parent = () => {
     <div style={parent}>
       {console.log(list)}
       <List list={list} currentId={currentId} setCurrentId={setCurrentId} />
-        <Description list={list} currentId={currentId} setCurrentId={setCurrentId} />
+      <Description
+        list={list}
+        currentId={currentId}
+        setCurrentId={setCurrentId}
+      />
     </div>
   );
 };
