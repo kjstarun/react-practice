@@ -12,6 +12,8 @@ import Input from "./React-State/input";
 // import PropsFC from "./Props/propsFC";
 // import Parent from "./PassDatatoChild/parent";
 import Like from "./Like-functionality/like";
+import MoviesList from "./Movies-api/movielist";
+import Life from "./Lifecycle/lifecycle";
 
 function App() {
   return (
@@ -21,7 +23,7 @@ function App() {
     //   <PropsFC subject="JS" />
     //   <PropsCC subject="React" />
     // </>
-    <Like/>
+    <MoviesList />
   );
 }
 
