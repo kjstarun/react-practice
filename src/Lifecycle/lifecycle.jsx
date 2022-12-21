@@ -1,23 +1,10 @@
 import { Component } from "react";
 
 class Life extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      current: 1,
-    };
-    console.log("Contructor");
-  }
-
   static getDerivedStateFromProps(props, state) {
     console.log("getDerivedStateFromProps");
     return null;
   }
-
-  componentDidMount() {
-    console.log("componentDidMount");
-  }
-
   render() {
     console.log("Render");
     return (
@@ -32,6 +19,16 @@ class Life extends Component {
         </button>
       </>
     );
+  }
+  componentDidMount() {
+    console.log("componentDidMount");
+  }
+  constructor(props) {
+    super(props);
+    this.state = {
+      current: 1,
+    };
+    console.log("Contructor");
   }
 }
 

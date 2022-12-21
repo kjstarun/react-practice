@@ -1,4 +1,4 @@
-import Input from "./React-State/input";
+// import Input from "./React-State/input";
 // import Textarea from "./React-Form/textarea";
 // import Range from "./React-Form/range";
 // import Dropdown from "./React-Form/dropdown";
@@ -11,9 +11,10 @@ import Input from "./React-State/input";
 // import PropsCC from "./Props/propsCC";
 // import PropsFC from "./Props/propsFC";
 // import Parent from "./PassDatatoChild/parent";
-import Like from "./Like-functionality/like";
-import MoviesList from "./Movies-api/movielist";
-import Life from "./Lifecycle/lifecycle";
+// import Like from "./Like-functionality/like";
+// import MoviesList from "./Movies-api/movielist";
+// import Life from "./Lifecycle/lifecycle";
+import Parent from "./Onclick-description/parent";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
     //   <PropsFC subject="JS" />
     //   <PropsCC subject="React" />
     // </>
-    <MoviesList />
+    <Parent />
   );
 }
 
