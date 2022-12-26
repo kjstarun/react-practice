@@ -226,13 +226,21 @@ const Parent = () => {
 
   const parent = {
     display: "flex",
+    flexDirection: "row",
+    gap: "10px",
+  };
+  const parent_list = {
+    display: "flex",
     flexDirection: "column",
     gap: "20px",
+    minWidth: "50%",
   };
   return (
     <div style={parent}>
       {console.log(list)}
-      <List list={list} currentId={currentId} setCurrentId={setCurrentId} />
+      <div style={parent_list}>
+        <List list={list} currentId={currentId} setCurrentId={setCurrentId} />
+      </div>
       <Description
         list={list}
         currentId={currentId}

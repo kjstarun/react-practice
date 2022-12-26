@@ -12,9 +12,12 @@
 // import PropsFC from "./Props/propsFC";
 // import Parent from "./PassDatatoChild/parent";
 // import Like from "./Like-functionality/like";
-// import MoviesList from "./Movies-api/movielist";
+import MoviesList from "./Movies-api/movielist";
 // import Life from "./Lifecycle/lifecycle";
+import OnEnter from "./LocalStorage/onEnter";
 import Parent from "./Onclick-description/parent";
+import UseEffectBlank from "./useEffect/useEffect-blank";
+import UseEffectWithDependencies from "./useEffect/useEffect-wdep";
 
 function App() {
   return (
@@ -24,7 +27,7 @@ function App() {
     //   <PropsFC subject="JS" />
     //   <PropsCC subject="React" />
     // </>
-    <Parent />
+    <OnEnter />
   );
 }
 
