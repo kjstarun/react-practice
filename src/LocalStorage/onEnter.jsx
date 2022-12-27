@@ -15,21 +15,31 @@ const OnEnter = () => {
         alert("enter valid input");
       } else {
         setList((old) => {
-          return [...old, data];
+          if (old.length === 0) {
+            return [...old, data];
+          } else {
+            console.log("old", old);
+            if (!old.includes(data)) {
+              return [...old, data];
+            } else {
+              return [...old];
+            }
+          }
         });
       }
     }
   };
+
   useEffect(() => {
     console.log("UEBD called");
-    console.log(Object.keys(localStorage));
-    setList(Object.keys(localStorage));
+    console.log(JSON.parse(localStorage.getItem("Data")));
+    setList(JSON.parse(localStorage.getItem("Data")));
   }, []);
+
   useEffect(() => {
-    list.map((item) => {
-      return localStorage.setItem(item, true);
-    });
+    localStorage.setItem("Data", JSON.stringify(list));
   }, [list]);
+
   return (
     <>
       <input
@@ -43,10 +53,17 @@ const OnEnter = () => {
           handleKey(e.key, e.target.value);
         }}
       />
-      {list.length === 0 ? <p>Enter a data</p> : <></>}
-      {list.map((item) => {
-        return <p>{item}</p>;
-      })}
+      {console.log("list", list)}
+      {list.length === 0 || typeof list === "undefined" ? (
+        <p>Enter a data</p>
+      ) : (
+        <>
+          {list.map((item) => {
+            console.log("map", item);
+            return <p>{item}</p>;
+          })}
+        </>
+      )}
     </>
   );
 };
