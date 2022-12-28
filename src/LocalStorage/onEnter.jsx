@@ -54,7 +54,7 @@ const OnEnter = () => {
         }}
       />
       {console.log("list", list)}
-      {list.length === 0 || typeof list === "undefined" ? (
+      {list.length === 0 || typeof(list) === "undefined" ? (
         <p>Enter a data</p>
       ) : (
         <>

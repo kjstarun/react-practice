@@ -15,6 +15,9 @@
 // import MoviesList from "./Movies-api/movielist";
 // import Life from "./Lifecycle/lifecycle";
 import OnEnter from "./LocalStorage/onEnter";
+import MemoParent from "./Optimization/parentmemo";
+import DropDownItem from "./treeView/head";
+import Tree from "./treeView/tree";
 // import Parent from "./Onclick-description/parent";
 // import UseEffectBlank from "./useEffect/useEffect-blank";
 // import UseEffectWithDependencies from "./useEffect/useEffect-wdep";
@@ -28,7 +31,7 @@ function App() {
     //   <PropsFC subject="JS" />
     //   <PropsCC subject="React" />
     // </>
-    <OnEnter />
+    <MemoParent />
   );
 }
 
