@@ -14,14 +14,16 @@
 // import Like from "./Like-functionality/like";
 // import MoviesList from "./Movies-api/movielist";
 // import Life from "./Lifecycle/lifecycle";
-import OnEnter from "./LocalStorage/onEnter";
-import MemoParent from "./Optimization/parentmemo";
-import DropDownItem from "./treeView/head";
-import Tree from "./treeView/tree";
+// import OnEnter from "./LocalStorage/onEnter";
+// import MemoParent from "./Optimization/parentmemo";
+// import DropDownItem from "./treeView/head";
+// import Tree from "./treeView/tree";
 // import Parent from "./Onclick-description/parent";
 // import UseEffectBlank from "./useEffect/useEffect-blank";
 // import UseEffectWithDependencies from "./useEffect/useEffect-wdep";
-import One from "./Unmounting/one";
+// import One from "./Unmounting/one";
+// import Day11CleanupFunc from "./Unmounting/unmount-with-depen";
+import Parent from "./Filter-usememo/Parent";
 
 function App() {
   return (
@@ -31,7 +33,7 @@ function App() {
     //   <PropsFC subject="JS" />
     //   <PropsCC subject="React" />
     // </>
-    <MemoParent />
+    <Parent />
   );
 }
 
