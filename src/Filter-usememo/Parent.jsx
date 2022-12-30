@@ -216,7 +216,7 @@ const Parent = () => {
     if (search.length > 0) {
       const newArr = API.filter((item) => {
         if (item.category.includes(search.toLowerCase())) {
-          return item;
+          return true;
         }
       });
       return newArr;

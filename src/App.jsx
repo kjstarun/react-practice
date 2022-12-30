@@ -23,7 +23,10 @@
 // import UseEffectWithDependencies from "./useEffect/useEffect-wdep";
 // import One from "./Unmounting/one";
 // import Day11CleanupFunc from "./Unmounting/unmount-with-depen";
+import CallOne from "./example/callOne";
+import FilterV2 from "./Filter-usememo/filterV2";
 import Parent from "./Filter-usememo/Parent";
+import UseCallbackOne from "./useCallback/callBack1";
 
 function App() {
   return (
@@ -33,7 +36,7 @@ function App() {
     //   <PropsFC subject="JS" />
     //   <PropsCC subject="React" />
     // </>
-    <Parent />
+    <CallOne />
   );
 }
 
