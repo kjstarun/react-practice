@@ -1,14 +1,16 @@
+import React from "react";
 import { useState } from "react";
+import "./style.css";
 
-const Like = () => {
-  console.log("entry");
+const LikeComp = () => {
   const [user, setUser] = useState([
     {
       id: 1,
+      isLiked: false,
       name: "Leanne Graham",
+      img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
       username: "Bret",
       email: "Sincere@april.biz",
-      isActive: false,
       address: {
         street: "Kulas Light",
         suite: "Apt. 556",
@@ -29,10 +31,11 @@ const Like = () => {
     },
     {
       id: 2,
+      isLiked: false,
       name: "Ervin Howell",
+      img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
       username: "Antonette",
       email: "Shanna@melissa.tv",
-      isActive: false,
       address: {
         street: "Victor Plains",
         suite: "Suite 879",
@@ -53,10 +56,11 @@ const Like = () => {
     },
     {
       id: 3,
+      isLiked: false,
       name: "Clementine Bauch",
+      img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
       username: "Samantha",
       email: "Nathan@yesenia.net",
-      isActive: false,
       address: {
         street: "Douglas Extension",
         suite: "Suite 847",
@@ -77,10 +81,12 @@ const Like = () => {
     },
     {
       id: 4,
+      isLiked: false,
       name: "Patricia Lebsack",
+      img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
+
       username: "Karianne",
       email: "Julianne.OConner@kory.org",
-      isActive: false,
       address: {
         street: "Hoeger Mall",
         suite: "Apt. 692",
@@ -101,10 +107,12 @@ const Like = () => {
     },
     {
       id: 5,
+      isLiked: false,
       name: "Chelsey Dietrich",
+      img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
+
       username: "Kamren",
       email: "Lucio_Hettinger@annie.ca",
-      isActive: false,
       address: {
         street: "Skiles Walks",
         suite: "Suite 351",
@@ -125,10 +133,12 @@ const Like = () => {
     },
     {
       id: 6,
+      isLiked: false,
       name: "Mrs. Dennis Schulist",
+      img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
+
       username: "Leopoldo_Corkery",
       email: "Karley_Dach@jasper.info",
-      isActive: false,
       address: {
         street: "Norberto Crossing",
         suite: "Apt. 950",
@@ -149,10 +159,11 @@ const Like = () => {
     },
     {
       id: 7,
+      isLiked: false,
       name: "Kurtis Weissnat",
+      img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
       username: "Elwyn.Skiles",
       email: "Telly.Hoeger@billy.biz",
-      isActive: false,
       address: {
         street: "Rex Trail",
         suite: "Suite 280",
@@ -173,10 +184,11 @@ const Like = () => {
     },
     {
       id: 8,
+      isLiked: false,
       name: "Nicholas Runolfsdottir V",
+      img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
       username: "Maxime_Nienow",
       email: "Sherwood@rosamond.me",
-      isActive: false,
       address: {
         street: "Ellsworth Summit",
         suite: "Suite 729",
@@ -197,10 +209,11 @@ const Like = () => {
     },
     {
       id: 9,
+      isLiked: false,
       name: "Glenna Reichert",
+      img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
       username: "Delphine",
       email: "Chaim_McDermott@dana.io",
-      isActive: false,
       address: {
         street: "Dayna Park",
         suite: "Suite 449",
@@ -221,10 +234,12 @@ const Like = () => {
     },
     {
       id: 10,
+      isLiked: false,
       name: "Clementina DuBuque",
+      img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
+
       username: "Moriah.Stanton",
       email: "Rey.Padberg@karina.biz",
-      isActive: false,
       address: {
         street: "Kattie Turnpike",
         suite: "Suite 198",
@@ -244,28 +259,46 @@ const Like = () => {
       },
     },
   ]);
-  const cardContainer = {
-    display: "flex",
-    flexWrap: "wrap",
-    // flex:"5",
-    flexDirection: "row",
-    gap: "10px",
+
+  const [likes, setLike] = useState({});
+
+  const likeDislike = (id, isLiked) => {
+    setLike((prevState) => {
+      return { ...prevState, [id]: !isLiked };
+    });
+    // console.log(likes[item.id])
   };
-  const card = {
-    // border: "1px solid sil",
-    color: "blue",
-    backgroundColor: "#e9e9e9",
-    padding: "10px",
-    height: "200px",
-    width: "200px",
+  const liked = {
+    color: "red",
+  };
+  const dislike = {
+    color: "white",
   };
   return (
-    <div style={cardContainer}>
-      {user.map((item) => {
-        return <p style={card}>{item.name}</p>;
-      })}
-    </div>
+    <>
+      <h1>LIKE</h1>
+      <div className="overall-container">
+        {user.map((item) => {
+          return (
+            <div className="card-container">
+              <h3>{item.name}</h3>
+              <button
+                style={{ border: "none", outline: "none" }}
+                className="button-tag"
+                onClick={() => likeDislike(item.id, likes[item.id])}
+              >
+                <i
+                  id="like-icon"
+                  class="fa fa-heart"
+                  style={likes[item.id] ? liked : dislike}
+                ></i>
+              </button>
+            </div>
+          );
+        })}
+      </div>
+    </>
   );
 };
 
-export default Like;
+export default LikeComp;

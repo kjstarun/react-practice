@@ -26,6 +26,7 @@
 import CallOne from "./example/callOne";
 import FilterV2 from "./Filter-usememo/filterV2";
 import Parent from "./Filter-usememo/Parent";
+import LikeComp from "./Like-functionality/like";
 import UseCallbackOne from "./useCallback/callBack1";
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
     //   <PropsFC subject="JS" />
     //   <PropsCC subject="React" />
     // </>
-    <CallOne />
+    <LikeComp />
   );
 }
 
