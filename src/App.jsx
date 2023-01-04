@@ -23,6 +23,7 @@
 // import UseEffectWithDependencies from "./useEffect/useEffect-wdep";
 // import One from "./Unmounting/one";
 // import Day11CleanupFunc from "./Unmounting/unmount-with-depen";
+import Form from "./dynamic-form/form";
 import CallOne from "./example/callOne";
 import FilterV2 from "./Filter-usememo/filterV2";
 import Parent from "./Filter-usememo/Parent";
@@ -37,7 +38,7 @@ function App() {
     //   <PropsFC subject="JS" />
     //   <PropsCC subject="React" />
     // </>
-    <LikeComp />
+    <Form />
   );
 }
 
