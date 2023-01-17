@@ -23,14 +23,29 @@
 // import UseEffectWithDependencies from "./useEffect/useEffect-wdep";
 // import One from "./Unmounting/one";
 // import Day11CleanupFunc from "./Unmounting/unmount-with-depen";
-import Form from "./dynamic-form/form";
-import CallOne from "./example/callOne";
-import FilterV2 from "./Filter-usememo/filterV2";
-import Parent from "./Filter-usememo/Parent";
-import LikeComp from "./Like-functionality/like";
-import UseCallbackOne from "./useCallback/callBack1";
+// import Form from "./dynamic-form/form";
+// import CallOne from "./example/callOne";
+// import FilterV2 from "./Filter-usememo/filterV2";
+import Parent from "./dark-theme/parent";
+// import LikeComp from "./Like-functionality/like";
+// import A from "./prop-drilling-fix-context/A";
+// import UseCallbackOne from "./useCallback/callBack1";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Child1 from "./dark-theme/child1";
+import { createContext, useState } from "react";
+import UseTransition1 from "./useTransition/use1";
+import UseTransitionFix from "./useTransition/use2fix";
+import UseID1 from "./useID/useIDone";
+import StyleOne from "./styled-comp/styleOne";
+
+export const useContextAPI = createContext(null);
+const UseContext = useContextAPI.Provider;
 
 function App() {
+  const [color, setColor] = useState(0);
+
+  const toggletheme = () => setColor((prev) => !prev);
+
   return (
     // <>
     //   <PropsFC subject="HTML" />
@@ -38,7 +53,16 @@ function App() {
     //   <PropsFC subject="JS" />
     //   <PropsCC subject="React" />
     // </>
-    <Form />
+    // <UseContext value={{ color, toggletheme }}>
+    //   <BrowserRouter>
+    //     <Routes>
+    //       <Route path="/" element={<Parent />} />
+    //       <Route path="child1" element={<Child1 />} />
+    //     </Routes>
+    //   </BrowserRouter>
+    // </UseContext>
+    // <Parent />
+    <StyleOne />
   );
 }
 
