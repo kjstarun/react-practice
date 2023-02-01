@@ -37,6 +37,8 @@ import UseTransition1 from "./useTransition/use1";
 import UseTransitionFix from "./useTransition/use2fix";
 import UseID1 from "./useID/useIDone";
 import StyleOne from "./styled-comp/styleOne";
+import DoubleClick from "./ondoubleclick/doubleclick";
+import ItemList from "./item-list-comp/item-list";
 
 export const useContextAPI = createContext(null);
 const UseContext = useContextAPI.Provider;
@@ -62,7 +64,7 @@ function App() {
     //   </BrowserRouter>
     // </UseContext>
     // <Parent />
-    <StyleOne />
+    <ItemList />
   );
 }
 
