@@ -17,7 +17,7 @@
 // import OnEnter from "./LocalStorage/onEnter";
 // import MemoParent from "./Optimization/parentmemo";
 // import DropDownItem from "./treeView/head";
-// import Tree from "./treeView/tree";
+import Tree from "./treeView/tree";
 // import Parent from "./Onclick-description/parent";
 // import UseEffectBlank from "./useEffect/useEffect-blank";
 // import UseEffectWithDependencies from "./useEffect/useEffect-wdep";
@@ -26,27 +26,31 @@
 // import Form from "./dynamic-form/form";
 // import CallOne from "./example/callOne";
 // import FilterV2 from "./Filter-usememo/filterV2";
-import Parent from "./dark-theme/parent";
+// import Parent from "./dark-theme/parent";
 // import LikeComp from "./Like-functionality/like";
 // import A from "./prop-drilling-fix-context/A";
 // import UseCallbackOne from "./useCallback/callBack1";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Child1 from "./dark-theme/child1";
-import { createContext, useState } from "react";
-import UseTransition1 from "./useTransition/use1";
-import UseTransitionFix from "./useTransition/use2fix";
-import UseID1 from "./useID/useIDone";
-import StyleOne from "./styled-comp/styleOne";
-import DoubleClick from "./ondoubleclick/doubleclick";
-import ItemList from "./item-list-comp/item-list";
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import Child1 from "./dark-theme/child1";
+// import { createContext, useState } from "react";
+// import UseTransition1 from "./useTransition/use1";
+// import UseTransitionFix from "./useTransition/use2fix";
+// import UseID1 from "./useID/useIDone";
+// import StyleOne from "./styled-comp/styleOne";
+// import DoubleClick from "./ondoubleclick/doubleclick";
+// import ItemList from "./item-list-comp/item-list";
+// import Counter from "./redux-comp/counter";
+// import { Provider } from "react-redux";
+// import store from "./redux/store";
+// import ItemList from "./item-list-comp/item-list";
 
-export const useContextAPI = createContext(null);
-const UseContext = useContextAPI.Provider;
+// export const useContextAPI = createContext(null);
+// const UseContext = useContextAPI.Provider;
 
 function App() {
-  const [color, setColor] = useState(0);
+  // const [color, setColor] = useState(0);
 
-  const toggletheme = () => setColor((prev) => !prev);
+  // const toggletheme = () => setColor((prev) => !prev);
 
   return (
     // <>
@@ -64,7 +68,10 @@ function App() {
     //   </BrowserRouter>
     // </UseContext>
     // <Parent />
-    <ItemList />
+    // <Provider store={store}>
+    //   <Counter />
+    // </Provider>
+    <Tree />
   );
 }
 
