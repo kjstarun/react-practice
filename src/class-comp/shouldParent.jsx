@@ -1,5 +1,4 @@
 import { Component } from "react";
-import GetSnapChild from "./getsnapChild";
 
 class ShouldParent extends Component {
   constructor() {
